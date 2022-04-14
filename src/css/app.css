@@ -1,0 +1,30 @@
+.logo{
+    text-align: center;
+}
+
+div.li-button{
+    padding-top: 5vh;
+}
+
+div.li-button:hover {
+    color: #00F5FF;
+    /* text-decoration: underline */
+}
+
+.army-logo{
+    width: 50px;
+}
+
+.element-image{
+    width: 50vh;
+}
+
+.element-description{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    text-shadow: 0 0 1px #2196f3, 0 0 10px #2196f3, 0 0 80px #2196f3;
+}
+
+.info-block  {
+    margin-bottom: 4rem;
+  }
