@@ -12,10 +12,7 @@ import AboutPage from './Pages/About/';
 import './css/App.css';
 import 'animate.css'
 
-export const eel = window.eel
-if(!!eel){
-  eel.set_host( 'ws://localhost:8080' )
-}
+import eel from './IPC'
 
 export class App extends Component<{}, {}> {
   public render() {

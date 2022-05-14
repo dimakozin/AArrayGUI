@@ -1,5 +1,10 @@
 import * as React from "react";
+import eel from '../../IPC'
 // import STLViewer from 'stl-viewer'
+
+const openLeafs = () => {
+    eel.blink_led_py()
+}
 
 const ManagementPage = () => {
     return (
@@ -29,7 +34,7 @@ const ManagementPage = () => {
         </tr>
         </table>
         <div className="buttons">
-            <button id="open-leafs">Открыть</button>
+            <button id="open-leafs" onClick={openLeafs}>Открыть</button>
             <button id="close-leafs">Закрыть</button>
             <button id="rotate-leafs">Поворот</button>
         </div>

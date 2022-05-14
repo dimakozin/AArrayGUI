@@ -1,9 +1,14 @@
 import sys
 import eel
+import serial
+
+BAUDRATE = 9600
+
+ser = serial.Serial('/dev/ttyUSB0', BAUDRATE)
 
 @eel.expose
 def blink_led_py():
-    print("TODO: blink led")
+    ser.write(b'TEST')
 
 def start_eel(develop):
     """Start Eel with either production or development configuration."""
@@ -25,10 +30,10 @@ def start_eel(develop):
         size=(1280, 800),
     )
     try:
-        eel.start(page, mode=app, **eel_kwargs)
+        eel.start(page)
+        print("App is started...")
     except EnvironmentError:
-        print("he")
+        print("some error")
 
 if __name__ == '__main__':
-    import sys
     start_eel(develop=len(sys.argv) == 2)
