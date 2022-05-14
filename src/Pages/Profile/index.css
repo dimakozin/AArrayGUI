@@ -1,0 +1,12 @@
+.profile{
+    display: block;
+}
+
+.profile-picture{
+    width: 100%;
+}
+
+.profile-section{
+    justify-content: initial;
+    width: 100%;
+}
