@@ -1,0 +1,30 @@
+.manualManagement {
+    column-count: 2;
+}
+
+.row {
+    text-align: center;
+}
+
+.threeButtons {
+    display: flex;
+}
+
+.button-leafManagement {
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 10px;
+    font-size: 50px;
+}
+
+.smallSize{
+    font-size: 15px;
+}
+
+.managementMenuTitle{
+    text-align: center;
+}
+
+.modeToggle{
+    text-align: center;
+}
